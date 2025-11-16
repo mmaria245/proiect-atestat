@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Scoruri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Scorurile Salvate</h1>
+
+<div class="scoresBox">
+    <p id="scoreListText"></p>
+</div>
+
+<button onclick="location.href='informatics.html'" class="scoresBtn">Înapoi</button>
+
+<script>
+let scoruri = JSON.parse(localStorage.getItem("scoreList")) || [];
+document.getElementById("scoreListText").textContent = scoruri.length ? 
+    "Scorurile tale: " + scoruri.join(", ") : 
+    "Nu există scoruri salvate.";
+</script>
+
+</body>
+</html>

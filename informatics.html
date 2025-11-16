@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghicește numarul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+
+<div class="menuContainer">
+    <button class="scoresBtn" onclick="location.href='index.html'">Înapoi la pagina principală</button>
+    <button class="scoresBtn" onclick="location.href='scores.html'">Scoruri</button>
+    <button class="scoresBtn" onclick="location.href='binary.html'">Explicația căutării binare</button>
+</div>
+
+<h1>Ghicește Numarul</h1>
+<p>Se alege automat un număr între 1 și 100.</p>
+<p>Ai 10 încercări și 60 de secunde.</p>
+<p>Timp rămas: <span id="timer">60</span> secunde</p>
+
+<div class="form">
+    <label for="guessField">Introduceți un număr:</label>
+    <input type="number" id="guessField" class="guessField" min="1" max="100">
+    <input type="submit" value="Trimite" class="guessSubmit">
+</div>
+
+<div class="resultate">
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowerORhigher"></p>
+</div>
+
+</body>
+</html>

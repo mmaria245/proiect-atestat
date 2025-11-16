@@ -1,0 +1,129 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(135deg, #ffb3e6, #f09dec, #a0d0f8);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #fff;
+    text-shadow: 3px 3px 10px #e64ad9;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.3em;
+    color: #ffffffcc;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.mainButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Butoane mari, vizibile */
+.menuBtn {
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #ff72d2, #e64ad9);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.menuBtn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.menuBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+
+/* Alte stiluri pentru jocurile tale, scoruri și formular rămân la fel */
+.body-wrong { background-color: #ff4d4d !important; }
+.body-correct { background-color: #5cd65c !important; }
+
+.form {
+    background: linear-gradient(135deg, #ffffff, #f09dec, #a0d0f8);
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.form input[type="number"],
+.form input[type="text"],
+.form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #e64ad9;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.form input[type="submit"] {
+    background: linear-gradient(135deg, #f09dec, #e64ad9);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form input[type="submit"]:hover {
+    background: #d43ac7;
+}
+
+.form input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.scoresBtn {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #f09dec, #e64ad9);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.scoresBtn:hover {
+    background: linear-gradient(135deg, #d43ac7, #bf2aa9);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.scoresBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
