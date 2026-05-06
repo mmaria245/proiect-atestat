@@ -127,3 +127,14 @@ h1 {
     transform: scale(0.95);
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+.atestat-banner {
+    width: 100%;
+    background: linear-gradient(135deg, #e64ad9, #ff72d2);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
